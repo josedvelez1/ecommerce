@@ -1,0 +1,88 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 95px;
+}
+
+.picture-store {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+}
+
+.icons-navbar{
+    justify-content: space-between;
+    z-index: 5;
+}
+
+input#luna {
+    visibility: hidden;
+}
+
+input#canasta {
+    visibility: hidden;
+}
+
+input#menu-hamburguesa {
+    visibility: hidden;
+}
+
+
+.menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 95px);
+    top: 95px;
+    right: 100%;
+    text-align: center;
+    transition: all 300ms linear;
+    background-color: #fff;
+}
+
+input#menu-hamburguesa:checked ~ ul {
+    right: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+
+}
+
+.caja-color {
+    background-color: indianred;
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    right: 0;
+    top: -6rem;
+}
+
+.imagen-home {
+    z-index: 3;
+
+}
+
+@media only screen and ( min-width: 600px ) {
+
+    .menuhamburguesa {
+        display: none;
+    }
+
+}
